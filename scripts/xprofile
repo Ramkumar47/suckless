@@ -1,0 +1,12 @@
+# swaping control and capslock
+setxkbmap -option caps:ctrl_modifier
+# disabling screen dim
+xset -dpms
+xss-lock -- slock &
+# starting picom
+picom &
+# starting slstatus
+slstatus &
+# setting up wallpaper
+feh --bg-scale ~/Pictures/kali/output2.png
+
