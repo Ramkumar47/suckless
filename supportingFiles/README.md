@@ -10,6 +10,7 @@ for supporting the suckless software.
 
 *dwm.desktop* put this file in /usr/share/xsessions/ for it to showup in login manager
 
+*inputrc* put it in home under hidden mode for vi keybindings in bash
 
 Other customizations such as fonts, tmux etc.. can be obtained from
 other repositories such as *OpenSUSE_configurations*
