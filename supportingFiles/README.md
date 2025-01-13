@@ -8,6 +8,8 @@ for supporting the suckless software.
 
 *30-touchpad.conf* handles touchpad configuration. Place it under /etc/X11/xorg.conf.d/ directory
 
+*dwm.desktop* put this file in /usr/share/xsessions/ for it to showup in login manager
+
 
 Other customizations such as fonts, tmux etc.. can be obtained from
 other repositories such as *OpenSUSE_configurations*
