@@ -6,6 +6,8 @@ for supporting the suckless software.
 
 *wallpapers* directory contains chosen wallpapers
 
+*30-touchpad.conf* handles touchpad configuration. Place it under /etc/X11/xorg.conf.d/ directory
+
 
 Other customizations such as fonts, tmux etc.. can be obtained from
 other repositories such as *OpenSUSE_configurations*
