@@ -10,21 +10,33 @@ static const char *fonts[]          = { "monospace:size=10" };
 static const char dmenufont[]       = "monospace:size=10";
 // static const char *fonts[]          = { "sauceCodePro:size=10" };
 // static const char dmenufont[]       = "sauceCodePro:size=10";
-static const char col_gray1[]       = "#000000";
-static const char col_gray2[]       = "#222222";
-// static const char col_gray1[]       = "#222222";
-// static const char col_gray2[]       = "#444444";
-static const char col_gray3[]       = "#dddddd";
-static const char col_gray4[]       = "#ffffff";
-// static const char col_gray3[]       = "#bbbbbb";
-// static const char col_gray4[]       = "#eeeeee";
-/* static const char col_cyan[]        = "#005577";*/
-static const char col_cyan[]        = "#2a017a";
-static const char col_black[]       = "#000000";
-static const char col_red[]         = "#ff0000";
-static const char col_yellow[]      = "#ffff00";
-static const char col_white[]       = "#ffffff";
-static const char col_teal[]        = "#00ff00";
+// static const char col_gray1[]       = "#000000";
+// static const char col_gray2[]       = "#222222";
+// // static const char col_gray1[]       = "#222222";
+// // static const char col_gray2[]       = "#444444";
+// static const char col_gray3[]       = "#dddddd";
+// static const char col_gray4[]       = "#ffffff";
+// // static const char col_gray3[]       = "#bbbbbb";
+// // static const char col_gray4[]       = "#eeeeee";
+// [> static const char col_cyan[]        = "#005577";<]
+// static const char col_cyan[]        = "#2a017a";
+// static const char col_black[]       = "#000000";
+// static const char col_red[]         = "#ff0000";
+// static const char col_yellow[]      = "#ffff00";
+// static const char col_white[]       = "#ffffff";
+// static const char col_teal[]        = "#00ff00";
+
+// attempt to make catppuccin theme - mocha
+static const char col_gray1[]       = "#1e1e2e"; // base
+static const char col_gray2[]       = "#585b70"; // surface 2
+static const char col_gray3[]       = "#9399b2"; // overlay 2
+static const char col_gray4[]       = "#313244"; // surface 0
+static const char col_cyan[]        = "#89b4fa"; // Blue
+static const char col_black[]       = "#11111b"; // crust
+static const char col_red[]         = "#ed8796"; // Red
+static const char col_yellow[]      = "#eed49f"; // yellow
+static const char col_white[]       = "#f4dbd6"; // Rosewater
+static const char col_teal[]        = "#94e2d5"; // teal
 
 static const char *colors[][3]      = {
     // [>               fg         bg         border   <]

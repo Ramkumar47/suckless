@@ -2,11 +2,16 @@
 setxkbmap -option caps:ctrl_modifier
 # disabling screen dim
 xset -dpms
+xset s off
 xss-lock -- slock &
-# starting picom
-picom &
+# starting picom with experimental backends for screen tear fix
+picom --config ~/.config/picom.conf --experimental-backend&
 # starting slstatus
 slstatus &
 # setting up wallpaper
-feh --bg-scale ~/Pictures/kali/output2.png
+# feh --bg-scale ~/Pictures/kali/output2.png
+# feh --bg-scale ~/Pictures/Wallpapers/pexels-frank-cone-140140-2961876.jpg
+feh --bg-scale ~/Pictures/Wallpapers/dark-cat-rosewater.png
 
+# # define default editor
+# EDITOR="/usr/bin/vim"
