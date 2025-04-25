@@ -137,6 +137,7 @@ static const Key keys[] = {
     { MODKEY|ShiftMask,             XK_d,      spawn,          SHCMD("brightnessctl s 5%-") },
     { MODKEY|ShiftMask,             XK_s,      spawn,          SHCMD("flameshot gui") },
     { MODKEY|ShiftMask,             XK_t,      spawn,          SHCMD("st -T 'floatingSt'") },
+    { MODKEY|ShiftMask,             XK_m,      spawn,          SHCMD("bash ~/.scripts/touchPadToggle.sh") },
 };
 
 /* button definitions */
