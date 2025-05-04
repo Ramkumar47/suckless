@@ -1,5 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 
+#include<X11/XF86keysym.h>
+
 /* appearance */
 static const unsigned int borderpx  = 2;        /* border pixel of windows */
 static const unsigned int gappx     = 6;        /* gaps between windows */
@@ -133,11 +135,17 @@ static const Key keys[] = {
     { MODKEY|ShiftMask,             XK_q,      quit,           {0} },
     { MODKEY|ShiftMask,             XK_l,      spawn,          {.v = lockscreen} },
     { MODKEY|ShiftMask,             XK_v,      spawn,          SHCMD("st -T 'alsamixer' -e alsamixer") },
-    { MODKEY|ShiftMask,             XK_i,      spawn,          SHCMD("brightnessctl s +5%") },
-    { MODKEY|ShiftMask,             XK_d,      spawn,          SHCMD("brightnessctl s 5%-") },
+    // { MODKEY|ShiftMask,             XK_i,      spawn,          SHCMD("brightnessctl s +5%") },
+    // { MODKEY|ShiftMask,             XK_d,      spawn,          SHCMD("brightnessctl s 5%-") },
+    { 0,             XF86XK_MonBrightnessUp,      spawn,          SHCMD("brightnessctl s +5%") },
+    { 0,             XF86XK_MonBrightnessDown,      spawn,          SHCMD("brightnessctl s 5%-") },
+    { 0,             XF86XK_AudioLowerVolume,      spawn,          SHCMD("bash ~/.scripts/volumeChange.sh decrease") },
+    { 0,             XF86XK_AudioRaiseVolume,      spawn,          SHCMD("bash ~/.scripts/volumeChange.sh increase") },
+    { 0,             XF86XK_AudioMute,      spawn,          SHCMD("bash ~/.scripts/volumeChange.sh toggle") },
     { MODKEY|ShiftMask,             XK_s,      spawn,          SHCMD("flameshot gui") },
     { MODKEY|ShiftMask,             XK_t,      spawn,          SHCMD("st -T 'floatingSt'") },
     { MODKEY|ShiftMask,             XK_m,      spawn,          SHCMD("bash ~/.scripts/touchPadToggle.sh") },
+    { 0,             XF86XK_TouchpadOn,      spawn,          SHCMD("bash ~/.scripts/touchPadToggle.sh") },
 };
 
 /* button definitions */
