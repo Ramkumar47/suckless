@@ -10,4 +10,4 @@ in debian-12
 
 - flameshot
 - brightnessctl
-
+- libimlib2-dev

@@ -33,7 +33,7 @@ static const char col_gray1[]       = "#1e1e2e"; // base
 static const char col_gray2[]       = "#585b70"; // surface 2
 static const char col_gray3[]       = "#9399b2"; // overlay 2
 static const char col_gray4[]       = "#313244"; // surface 0
-static const char col_cyan[]        = "#89b4fa"; // Blue
+static const char col_cyan[]        = "#cba6f7"; // Mauvre
 static const char col_black[]       = "#11111b"; // crust
 static const char col_red[]         = "#ed8796"; // Red
 static const char col_yellow[]      = "#eed49f"; // yellow
@@ -48,7 +48,7 @@ static const char *colors[][3]      = {
     [SchemeNorm] =   { col_gray3, col_gray1,  col_gray2 },
     [SchemeSel]  =   { col_gray4, col_cyan,   col_cyan },
     [SchemeWarn] =   { col_black, col_yellow, col_red },
-    [SchemeUrgent]=  { col_white, col_red,    col_red },
+    [SchemeUrgent]=  { col_black, col_red,    col_red },
     [SchemeIndicator1]=  { col_black, col_teal, col_black },
 };
 
