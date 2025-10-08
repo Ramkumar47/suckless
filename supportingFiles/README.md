@@ -12,5 +12,5 @@ for supporting the suckless software.
 
 *inputrc* put it in home under hidden mode for vi keybindings in bash
 
-Other customizations such as fonts, tmux etc.. can be obtained from
+Other customizations such as fonts etc.. can be obtained from
 other repositories such as *OpenSUSE_configurations*
