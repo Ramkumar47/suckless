@@ -11,8 +11,8 @@ static const char *group = "nogroup";
 // catppuccin variant
 static const char *colorname[NUMCOLS] = {
     [INIT] =   "#11111b",     /* after initialization */
-    [INPUT] =  "/home/ramkumar/Software/suckless/slock_withImage/images/kali_input.png",   /* during input */
-    [FAILED] = "/home/ramkumar/Software/suckless/slock_withImage/images/kali_error.png",   /* wrong password */
+    [INPUT] =  "/home/ramkumar/Pictures/wallpapers/kali_input.png",   /* during input */
+    [FAILED] = "/home/ramkumar/Pictures/wallpapers/kali_error.png",   /* wrong password */
     // [INIT] =   "#11111b",     /* after initialization */
     // [INPUT] =  "#74c7ec",   /* during input */
     // [FAILED] = "#f38ba8",   /* wrong password */
