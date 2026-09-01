@@ -20,6 +20,20 @@
     #define POWER_SUPPLY_CURRENT  "/sys/class/power_supply/%s/current_now"
     #define POWER_SUPPLY_POWER    "/sys/class/power_supply/%s/power_now"
 
+    int
+    battery_perc_int(const char *bat) /* to get battery % as number */
+    {
+        int cap_perc;
+        char path[PATH_MAX];
+
+        if (esnprintf(path, sizeof(path), POWER_SUPPLY_CAPACITY, bat) < 0)
+            return -1; // -1 means error
+        if (pscanf(path, "%d", &cap_perc) != 1)
+            return -1; // -1 means error
+
+        return cap_perc;
+    }
+
     static const char *
     pick(const char *bat, const char *f1, const char *f2, char *path,
          size_t length)
@@ -74,19 +88,19 @@
         return bprintf("%s",val);
     }
 
-    int
-    battery_perc_int(const char *bat) /* to get battery % as number */
-    {
-        int cap_perc;
-        char path[PATH_MAX];
-
-        if (esnprintf(path, sizeof(path), POWER_SUPPLY_CAPACITY, bat) < 0)
-            return NULL;
-        if (pscanf(path, "%d", &cap_perc) != 1)
-            return NULL;
-
-        return cap_perc;
-    }
+    // int
+    // battery_perc_int(const char *bat) /* to get battery % as number */
+    // {
+    //     int cap_perc;
+    //     char path[PATH_MAX];
+    //
+    //     if (esnprintf(path, sizeof(path), POWER_SUPPLY_CAPACITY, bat) < 0)
+    //         return -1;
+    //     if (pscanf(path, "%d", &cap_perc) != 1)
+    //         return -1;
+    //
+    //     return cap_perc;
+    // }
 
     const char *
     battery_perc(const char *bat)
